@@ -5,23 +5,21 @@ import Imagesection from './Components/Imagesection';
 import {LoadImages} from './Components/api';
 
 
-
-
-
 function App() {
  //data filter
-const [query,setQuery]=useState();
+// const [query,setQuery]=useState();
 
 //Call the function, Store data
  const data= LoadImages();
-  console.log(data); //Object.data.urls.thumb
+ console.log(data);
+   //Object.data.urls.thumb
  return (
-  <div>
-  <Searchbar />
+  <div className='App'>
+  <Searchbar/>
 
-  {data.map((img)=>{
-    <Imagesection src={img.urls.thumb} />
-  })}
+  {data.map((img)=>  (
+    <Imagesection src={img.urls.thumb} key={img.id} />
+  ))}
 
   </div>
  )
