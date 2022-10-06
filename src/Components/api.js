@@ -11,7 +11,7 @@ const count=1;
     useEffect(()=>{
         //Access the images
         axios
-        .get("https://api.unsplash.com/photos?client_id=fFHNnrLjyPGJRdQlB4YFlumEH_eXyQPWEOLRfvujJ0Q")
+        .get("https://api.unsplash.com/photos?client_id=fFHNnrLjyPGJRdQlB4YFlumEH_eXyQPWEOLRfvujJ0Q&per_page=30")
         //If success
         .then((data)=>{
             //console.log(data)
@@ -33,7 +33,7 @@ function SearchImages(query){
     useEffect(()=>{
         //Access the images
         axios
-        .get("https://api.unsplash.com/search/photos?query="+query+"&client_id=fFHNnrLjyPGJRdQlB4YFlumEH_eXyQPWEOLRfvujJ0Q")
+        .get("https://api.unsplash.com/search/photos?query="+query+"&client_id=fFHNnrLjyPGJRdQlB4YFlumEH_eXyQPWEOLRfvujJ0Q&per_page=30")
         //If success
         .then((data)=>{
            // console.log("invokes");
