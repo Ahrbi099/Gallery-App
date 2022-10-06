@@ -1,11 +1,9 @@
-import { getSuggestedQuery } from "@testing-library/react";
+
 import React from "react";
 import { useState } from "react";
 import { SearchImages } from "./api";
-import api from './api';
 import './Searchbar.css';
 import Imagesection from "./Imagesection";
-import text from './text';
 
 export default function Searchbar(){
    //data filter
