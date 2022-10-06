@@ -1,0 +1,14 @@
+.pagination {
+    display: inline-block;
+    display: flex;
+    background-image: url("https://i.postimg.cc/SKT5CSxs/background.jpg");
+  }
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+
+  }
+
