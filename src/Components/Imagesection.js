@@ -6,7 +6,7 @@ class Imagesection extends React.Component{
     render(){
        return (
                <div className="image-section"> 
-               <img src={this.props.src} width="250px" height="300px"/>
+               <img src={this.props.src} width="200px" height="250px"/>
                </div>
        )
        }
